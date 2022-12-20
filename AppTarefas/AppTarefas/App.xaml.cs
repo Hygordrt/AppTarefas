@@ -9,7 +9,7 @@ namespace AppTarefas
         public App()
         {
             InitializeComponent();
-
+            //Aqui chama a pagina
             MainPage = new NavigationPage(new Telas.Listar());
         }
 

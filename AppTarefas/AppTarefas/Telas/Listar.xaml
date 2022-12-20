@@ -5,7 +5,9 @@
              BackgroundColor="#f5f6f5"
              x:Class="AppTarefas.Telas.Listar">
     <ContentPage.Content>
+        
         <Grid RowSpacing="0">
+            <!--definindo a tela, uma coluna com duas linhas-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
@@ -14,24 +16,32 @@
                 <RowDefinition Height="5*"/>
             </Grid.RowDefinitions>
 
+            <!--2* grid referente a primeira linha/frame dividido em duas colunas-->
             <Grid>
+                <!--definindo colunas-->
                 <Grid.ColumnDefinitions>
+                    <!-- Definindo o tamanho da primeira coluna-->
                     <ColumnDefinition Width="2*"/>
+                    <!-- Definindo o tamanho da segunda coluna-->
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
+                <!--definindo linhas-->
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Label Margin="20, 30, 0,0">
+                
+                <!--Primeira coluna-->
+                <Label Margin="20, 30, 0,0" TextColor="Black">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span Text="Segunda-feira"/>
-                            <Span Text="&#10;"/> 
+                            
                             <Span Text="3 tarefas"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
 
+                <!--Segunda coluna-->
                 <Frame Grid.Column="1" Margin="10, 20, 20, 0" BackgroundColor="#4043c9" CornerRadius="20" HasShadow="False">
                     <Label TextColor="White" HorizontalTextAlignment="Center">
                         <Label.FormattedText>
@@ -45,9 +55,11 @@
                 </Frame>
                 
             </Grid>
+            <!--1* frame referente a linha 1 (parte de cima)  -->
             <Frame HasShadow="False" BackgroundColor="Transparent">
                 
             </Frame>
+            <!--1* frame referente a linha 2 (Parte de baixo) com arredondamento = 30 e movido 30dp para baixo com o TranslationY-->
             <Frame HasShadow="False" CornerRadius="30" TranslationY="30" Grid.Row="1">
                 
             </Frame>

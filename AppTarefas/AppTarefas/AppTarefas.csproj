@@ -11,6 +11,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Recursos\Fontes\Montserrat-Bold.ttf" />
+    <None Remove="Recursos\Fontes\Montserrat-Medium.ttf" />
+    <None Remove="Recursos\Fontes\Montserrat-Regular.ttf" />
+    <None Remove="Recursos\Fontes\Montserrat-Thin.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Recursos\Fontes\Montserrat-Bold.ttf" />
+    <EmbeddedResource Include="Recursos\Fontes\Montserrat-Medium.ttf" />
+    <EmbeddedResource Include="Recursos\Fontes\Montserrat-Regular.ttf" />
+    <EmbeddedResource Include="Recursos\Fontes\Montserrat-Thin.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
