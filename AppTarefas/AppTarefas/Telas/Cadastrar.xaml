@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTarefas.Telas.Cadastrar">
+             
+    <ContentPage.Content>
+        <Frame BackgroundColor="#F5F6FA" CornerRadius="10" Margin="30" HasShadow="True">
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label HorizontalOptions="FillAndExpand">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Criar" FontFamily="MontserratRegular" FontSize="16" TextColor="Black"/>
+                                <Span Text="&#10;"/>
+                                <Span Text="Tarefa" FontFamily="MontserratBold" FontSize="22" TextColor="Black"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+                <Label Text="X" Padding="20, 10" BackgroundColor="Yellow" FontFamily="MontserratRegular" FontSize="16" HorizontalOptions="End" VerticalOptions="Center">
+                <!--Reconhecimento de gesto-->
+                <!--<Label>-->
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="FecharModal"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
+                <!--<Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Criar" FontFamily="MontserratRegular" FontSize="16" TextColor="Black"/>
+                            <Span Text="&#10;"/>
+                            <Span Text="Tarefa" FontFamily="MontserratBold" FontSize="22" TextColor="Black"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+            <Label Text="X" Padding="20, 10" BackgroundColor="Yellow" HorizontalOptions="End"/>-->
+
+            <DatePicker/>
+
+            <TimePicker/>
+            <Entry Placeholder="Tarefa"/>
+            <Editor Placeholder="Nota" AutoSize="TextChanges" HeightRequest="300"/>
+
+            <Button Text="Adicionar" BackgroundColor="#4043C9" TextColor="White" VerticalOptions="EndAndExpand" HorizontalOptions="Center"/>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

@@ -31,24 +31,24 @@
                 </Grid.RowDefinitions>
                 
                 <!--Primeira coluna-->
-                <Label Margin="20, 30, 0,0" TextColor="Black">
+                <Label Margin="20, 55, 0,0" >
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Segunda-feira"/>
-                            
-                            <Span Text="3 tarefas"/>
+                            <Span Text="Quarta-feira" FontFamily="MontserratRegular" FontSize="25" TextColor="Black"/>
+                            <Span Text="&#10;"/>
+                            <Span Text="3 tarefas" FontFamily="MontserratThin" FontSize="18" TextColor="#888888"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
 
                 <!--Segunda coluna-->
                 <Frame Grid.Column="1" Margin="10, 20, 20, 0" BackgroundColor="#4043c9" CornerRadius="20" HasShadow="False">
-                    <Label TextColor="White" HorizontalTextAlignment="Center">
+                    <Label TextColor="White" HorizontalTextAlignment="Center" Margin="0, 15, 0, 0">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="9"/>
+                                <Span Text="9" FontFamily="MontserratMedium" FontSize="25"/>
                                 <Span Text="&#10;"/>
-                                <Span Text="Fev"/>
+                                <Span Text="Fev" FontFamily="MontserratThin" FontSize="18"/>
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
@@ -56,15 +56,26 @@
                 
             </Grid>
             <!--1* frame referente a linha 1 (parte de cima)  -->
-            <Frame HasShadow="False" BackgroundColor="Transparent">
-                
-            </Frame>
+            <!--<Frame HasShadow="False" BackgroundColor="red">
+                                           
+            </Frame>-->
+            <!--Fim da Parte superior-->
+            
             <!--1* frame referente a linha 2 (Parte de baixo) com arredondamento = 30 e movido 30dp para baixo com o TranslationY-->
             <Frame HasShadow="False" CornerRadius="30" TranslationY="30" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    
+                    
+                     <!--Botão flutuante no final da tela-->
+                    <Button Text="+" Clicked="BtnCadastrar" BackgroundColor="#4043c9" CornerRadius="50" FontSize="36" TextColor="White" TranslationY="-30" HorizontalOptions="End" VerticalOptions="End" WidthRequest="80"  HeightRequest="80" />
                 
+                </Grid>
             </Frame>
         </Grid>
-
+               
 
     </ContentPage.Content>
 </ContentPage>
