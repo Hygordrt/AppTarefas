@@ -34,7 +34,7 @@
                 <Label Margin="20, 55, 0,0" >
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Quarta-feira" FontFamily="MontserratRegular" FontSize="25" TextColor="Black"/>
+                            <Span Text="Segunda-feira" FontFamily="MontserratRegular" FontSize="25" TextColor="Black"/>
                             <Span Text="&#10;"/>
                             <Span Text="3 tarefas" FontFamily="MontserratThin" FontSize="18" TextColor="#888888"/>
                         </FormattedString>
@@ -67,8 +67,12 @@
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    
-                    
+
+                    <Label Text="Tarefa 01" TextColor="Black">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="BtnVisualizar"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                      <!--Botão flutuante no final da tela-->
                     <Button Text="+" Clicked="BtnCadastrar" BackgroundColor="#4043c9" CornerRadius="50" FontSize="36" TextColor="White" TranslationY="-30" HorizontalOptions="End" VerticalOptions="End" WidthRequest="80"  HeightRequest="80" />
                 

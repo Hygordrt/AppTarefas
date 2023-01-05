@@ -16,34 +16,33 @@
                             </FormattedString>
                         </Label.FormattedText>
                     </Label>
-                </StackLayout>
-                <Label Text="X" Padding="20, 10" BackgroundColor="Yellow" FontFamily="MontserratRegular" FontSize="16" HorizontalOptions="End" VerticalOptions="Center">
-                <!--Reconhecimento de gesto-->
-                <!--<Label>-->
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="FecharModal"/>
-                    </Label.GestureRecognizers>
-                </Label>
+
+                    <Label Text="X" Padding="20, 10" BackgroundColor="Transparent" FontFamily="MontserratRegular" FontSize="20" HorizontalOptions="End" VerticalOptions="Center" TextColor="Black">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="FecharModal"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                 </StackLayout>
+
+                <Frame Padding="0" CornerRadius="0" BorderColor="#EDEDED">
+                    <DatePicker TextColor="Black"/>
+                </Frame>
+                <Frame Padding="0" CornerRadius="0" BorderColor="#EDEDED">
+                    <TimePicker TextColor="Black"/>
+                </Frame>
+                <Frame Padding="0" CornerRadius="0" BorderColor="#EDEDED">
+                    <TimePicker TextColor="Black"/>
+                </Frame>
+                <Frame Padding="0" CornerRadius="0" BorderColor="#EDEDED">
+                    <Entry Placeholder="Tarefa"  PlaceholderColor="Black"/>
+                </Frame>
+                <Frame Padding="0" CornerRadius="0" BorderColor="#EDEDED">
+                    <Editor Placeholder="Nota" AutoSize="TextChanges" HeightRequest="300" PlaceholderColor="Black"/>
+                </Frame>
+                
+                <Button Text="Adicionar" BackgroundColor="#4043C9" TextColor="White" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Visual="Default" Padding="20 , 10"/>
+             
             </StackLayout>
-                <!--<Label>
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span Text="Criar" FontFamily="MontserratRegular" FontSize="16" TextColor="Black"/>
-                            <Span Text="&#10;"/>
-                            <Span Text="Tarefa" FontFamily="MontserratBold" FontSize="22" TextColor="Black"/>
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </StackLayout>
-            <Label Text="X" Padding="20, 10" BackgroundColor="Yellow" HorizontalOptions="End"/>-->
-
-            <DatePicker/>
-
-            <TimePicker/>
-            <Entry Placeholder="Tarefa"/>
-            <Editor Placeholder="Nota" AutoSize="TextChanges" HeightRequest="300"/>
-
-            <Button Text="Adicionar" BackgroundColor="#4043C9" TextColor="White" VerticalOptions="EndAndExpand" HorizontalOptions="Center"/>
-        </Frame>
+         </Frame>
     </ContentPage.Content>
 </ContentPage>

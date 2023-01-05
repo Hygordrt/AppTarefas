@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#f5f6f5"
+             x:Class="AppTarefas.Telas.Visualizar">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <!--definindo a tela, uma coluna com duas linhas-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+
+            <!--2* grid referente a primeira linha/frame dividido em duas colunas-->
+            <Grid TranslationY="30">
+                <!--definindo colunas-->
+                <Grid.ColumnDefinitions>
+                    <!-- Definindo o tamanho da primeira coluna-->
+                    <ColumnDefinition Width="1*"/>
+                    <!-- Definindo o tamanho da segunda coluna-->
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <!--definindo linhas-->
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackLayout>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="BtnVoltar"/>
+                    </StackLayout.GestureRecognizers>
+                    <Label Text="&#60;" TextColor="Black" FontSize="90" Margin="30,0,0,0"/>
+                </StackLayout>
+                
+                <Label Text="Comprar café" Grid.Column="1" FontSize="20" FontFamily="MontserratBold" TextColor="Black" Margin="10,45,0,0"/> 
+            </Grid>
+            
+            <Frame HasShadow="False" CornerRadius="30" TranslationY="30" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
