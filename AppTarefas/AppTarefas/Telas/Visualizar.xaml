@@ -35,17 +35,16 @@
                     <Label Text="&#60;" TextColor="Black" FontSize="90" Margin="30,0,0,0"/>
                 </StackLayout>
                 
-                <Label Text="Comprar café" Grid.Column="1" FontSize="20" FontFamily="MontserratBold" TextColor="Black" Margin="10,45,0,0"/> 
+                <Label Text="Comprar café" Grid.Column="1" FontSize="20" FontFamily="MontserratBold" TextColor="Black" Margin="10,55,0,0"/> 
             </Grid>
             
             <Frame HasShadow="False" CornerRadius="30" TranslationY="30" Grid.Row="1">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-
-
-                </Grid>
+                <StackLayout>
+                    <Label Text="03/03/03" FontSize="16" FontFamily="MontserratRegular" TextColor="Black"/>
+                    <Label Text="8:30 - 9:00" FontSize="16" FontFamily="MontserratRegular" TextColor="Gray"/>
+                    <Label Text="Nota" FontSize="20" FontFamily="MontserratBold" TextColor="Black"/>
+                    <Label Text="Café Santa clara - comprar 4 unidades se valor for menor que 8 reais" FontSize="16" FontFamily="MontserratRegular" TextColor="Black"/>
+                </StackLayout>
             </Frame>
         </Grid>
     </ContentPage.Content>
