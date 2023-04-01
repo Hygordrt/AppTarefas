@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTarefas.Android", "AppTa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTarefas.iOS", "AppTarefas\AppTarefas.iOS\AppTarefas.iOS.csproj", "{B31E4CAD-7532-4945-B79F-E8293059E545}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTarefas", "AppTarefas\AppTarefas\AppTarefas.csproj", "{FD0FC795-EA33-4A5B-9923-D4595FD5DB61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppTarefas", "AppTarefas\AppTarefas\AppTarefas.csproj", "{FD0FC795-EA33-4A5B-9923-D4595FD5DB61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
